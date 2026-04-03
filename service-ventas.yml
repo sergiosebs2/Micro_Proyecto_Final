@@ -1,6 +1,8 @@
 spring:
   application:
     name: service-ventas
+  config:
+    import: configserver:http://localhost:8081
   datasource:
     url: jdbc:mysql://localhost:3306/db_tpf_micro?serverTimezone=UTC
     username: ${db_user}
